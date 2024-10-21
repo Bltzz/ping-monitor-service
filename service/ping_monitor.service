@@ -1,0 +1,10 @@
+[Unit]
+Description=Ping Monitor Service
+After=network.target
+
+[Service]
+ExecStart=/path/to/scripts/check_connection.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
